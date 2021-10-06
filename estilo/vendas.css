@@ -1,0 +1,174 @@
+.ui-autocomplete { 
+	max-height: 200px;
+	max-width: 430px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.ui-autocomplete-loading { 
+	background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat; 
+}
+
+.vendas {
+	float: left;
+	width: 920px;
+	min-height: 400px;
+	margin-bottom: 100px;
+	
+}
+
+.vendas #produtos {
+	width: 420px;
+	padding: 5px;
+}
+
+.vendas .topo {
+	float: left;
+	width: 915px;
+	min-height: 40px;
+	background: #f1f1f1;
+	margin-bottom: 10px;
+}
+
+.vendas .topo h1 {
+	display: inline;
+	margin-right: 100px;
+}
+
+.vendas .topo fieldset {
+	padding: 10px;
+}
+
+.vendas input.button{
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: #000;
+}
+
+.vendas form#trocaModulo {
+	display: inline-block;
+}
+.vendas select {
+	font-weight: bold;
+	padding: 10px; 
+	width: 200px;
+	margin-right: 100px;
+}
+
+.vendas input.cancelar {
+
+	background: #f00;
+	color: #fff;
+}
+
+.vendas input.suspender {
+
+	background: #c90;
+	color: #fff;
+}
+
+.vendas input.novo-item {
+
+	background: #09f;
+	color: #fff;
+}
+
+.vendas .venda-rapida {
+
+	float: left;
+	width: 580px;
+	height: 300px;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #333;
+	
+}
+
+.vendas .venda-rapida .busca-por {
+	width: 580px;
+	padding: 10px;
+}
+.vendas .venda-rapida .busca-por input.radio {
+}
+
+.vendas .carrinho {
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background: #f1f1f1;
+	border: 1px solid #666;
+}
+
+.vendas .carrinho h2 {
+	display: block;
+	padding: 10px;
+	background: #069;
+	color: #fff;
+}
+
+.vendas .carrinho h3 {
+	display: block;
+	padding: 10px;
+	background: #f90;
+}
+
+.vendas .carrinho h4 {
+	display: block;
+	padding: 10px;
+}
+
+.vendas .pagamento {
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	background: #f1f1f1;
+	border: 1px solid #666;
+}
+
+.vendas .pagamento h2 {
+	display: block;
+	padding: 10px;
+	background: #c00;
+	color: #fff;
+}
+
+.vendas .pagamento h3 {
+	display: block;
+	padding: 10px;
+	background: #f90;
+}
+
+.vendas .pagamento h4 {
+	display: block;
+	padding: 10px;
+}
+
+.vendas .venda-rapida table {
+	margin-top: 10px;
+	width: 100%;
+	min-height: 100px;
+	background: #eee;
+}
+
+.vendas .venda-rapida tr {
+	height: 10px;
+}
+
+.vendas .venda-rapida th {
+	border: 1px solid #999;
+	padding: 10px;
+}
+.vendas .venda-rapida td {
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+.vendas input.preco {
+	width: 50px;
+	text-align: right;
+}
+.vendas input.qtde {
+	width: 50px;
+	text-align: right;
+}

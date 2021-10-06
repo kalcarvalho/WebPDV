@@ -1,0 +1,8 @@
+﻿<?php
+
+define("USER_BD",'root');
+define("HOST_BD",'localhost');
+define("NAME_BD",'trajetoria');
+define("PASSWORD_BD", '');
+
+?>

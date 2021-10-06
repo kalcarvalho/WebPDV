@@ -1,0 +1,15 @@
+.cliente #nome {
+	width: 400px;
+}
+
+.cliente #logradouro {
+	width: 400px;
+}
+
+.cliente #complemento, .cliente #bairro, .cliente #cidade, .cliente #email {
+	width: 200px;
+}
+
+.cliente #cep, .cliente #numero {
+	width: 100px;
+}

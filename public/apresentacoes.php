@@ -1,0 +1,1 @@
+<iframe src="http://docs.google.com/gview?url=http://127.0.0.1/intranet/arquivos/a_empresa_rev_2.ppt" style="width:600px; height:500px;" frameborder="0"></iframe>

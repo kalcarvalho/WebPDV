@@ -1,0 +1,15 @@
+.fornecedor #nome {
+	width: 400px;
+}
+
+.fornecedor #logradouro {
+	width: 400px;
+}
+
+.fornecedor #complemento, .fornecedor #bairro, .fornecedor #cidade, .fornecedor #email {
+	width: 200px;
+}
+
+.fornecedor #cep, .fornecedor #numero {
+	width: 100px;
+}

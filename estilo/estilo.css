@@ -1,0 +1,1026 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+	overflow: auto;
+}
+*/
+body {
+    background: #eee; /* url(../images/body.png);*/
+    font-family: "Trebuchet MS", arial, sans-serif;
+    font-size: 14px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+}
+
+@media (max-width:1280px){
+  #show_hide_grid_wrapper
+  {
+    
+  }
+}
+#menu-trigger {
+  top: 0;
+  left:0;
+  height:50px;
+  width:50px;
+  text-align:center;
+  background:#004E7A;
+}
+
+#menu-trigger i{
+color:#fff;
+padding-top: 9px;
+text-shadow:none;
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    border: none;
+}
+
+
+*/
+#wrapper {
+    padding-bottom: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+body[data-color="#eee"] #header {
+  background-image: none important;
+  background-repeat: repeat-x;
+  filter: none;
+  border-bottom: 1px solid #333;
+}
+
+body[data-color="#eee"].flat #sidebar > ul > li.active
+{
+ background-image: none important;
+  background-repeat: repeat-x;
+  filter: none;
+   
+}
+
+#container {
+	margin-left: 189px;
+	min-width: 0%;
+	min-height: 0%;
+	float: left;
+    display: table;
+    background: #eee;
+	overflow: hidden;
+}
+
+#conteudo {
+    min-height: 400px;
+    background: #eee;
+    float: left;
+	padding-left: 10px;
+}
+
+#titulo {
+	float: left;
+	height: 40px;
+	width: 100%;
+	background: #eee;
+	padding: 10px;
+	color: #039;
+}
+
+#breadcrumbs {
+	float: left;
+	border-top: 1px solid #0cf;
+	border-bottom: 1px solid #0cf;
+	width: 100%;
+	height: 25px;
+	background: #cef;
+}	
+
+#mensagem {
+    color: #600;
+    font-size: 12px;
+    float: left;
+    width: 920px;
+    height: 20px;
+    padding-top: 5px;
+    text-align: right;
+
+    font-weight: bold;
+}
+
+#rodape {
+    width: 100%;
+    height: 18px;
+    padding: 10px 0 5px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #003 url(../images/menu.png)	;
+    position: fixed;
+    bottom: 0px;
+}
+
+#rodape a {
+    color: #333;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+#form-empresa {
+    float:left;
+
+    width: 450px;
+    height: 300px;
+    background: #ffe;
+    text-align: right;
+    margin-left: 235px;
+    margin-top: 20px;
+    border: 1px dotted #333;
+}
+
+#form-empresa h3 {
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #069;
+    display: block;
+    background: #ff6;
+
+}
+
+#menu-listagem {
+    float:left;
+    padding: 5px;
+    width: 888px;
+    height: 58px;
+    background: #eee;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px dotted #999;
+
+}
+
+#menu-listagem-titulo {
+    float:left;
+    width: 300px;
+    height: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 15px;
+
+}
+
+#menu-botoes {
+    float:right;
+
+    width: 500px;
+    height: 60px;
+
+
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-align: right;
+}
+
+
+
+#menu-botoes img {
+    margin-left: 10px;
+
+}
+
+#menu-botoes img:hover {
+    background: #f90;
+}
+
+#menu-botoes a {
+    display: inline-block;
+
+
+
+
+
+}
+
+
+#menu-filtro {
+    float:left;
+    padding: 5px;
+    width: 890px;
+    height: 30px;
+    background: #fff;
+    text-align: left;
+
+
+}
+
+#listagem {	
+    float:left;
+
+    width: 900px;
+    margin-top: 10px;
+}
+
+#listagem table {
+    padding: 0px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+#listagem table.realce tr:hover {
+    background: #ffc;
+}
+
+#listagem th {
+    color: #00f;
+    padding: 10px;
+    margin: 0px;
+    background: #eee;
+    border-bottom: 1px solid #999;
+}
+
+#listagem tr {
+
+    padding: 10px;
+}
+
+
+#listagem tr.even {
+    background: #eee;
+} 
+
+#listagem tr.odd {
+    background: #fff;
+}
+
+#listagem td.left {
+    text-align: left;
+}
+
+#listagem td.center {
+    text-align: center;
+}
+
+#listagem p {
+    text-align: right;
+    margin-top: 5px;
+}
+
+#texto input {
+    border: 1px solid #ccc;
+}
+
+#mensagem-operacao {
+    float:left;
+    width: 900px;
+    height: 25px;
+
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #900;
+}
+
+
+.box {
+    float: left;
+    padding-top:5px;
+    padding-bottom:5px;
+    width: 290px;
+    height: 50px;
+    background: #eee;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.box:hover {
+    background: #f90;
+
+}
+
+.box-titulo {
+    float:left;
+    padding: 5px;
+    width: 910px;
+    height: 50px;
+    background: #000;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+
+
+}
+
+
+.box img {
+
+    margin: 0 10px 0 0 ;
+}
+
+.box a {
+    padding: 5px;
+
+    color: #333;
+}
+
+.box a:hover {
+    color: #666;
+
+}
+
+
+
+.error-message {
+    color: #f00;
+}
+
+.marca-texto {
+    background: #ff0;
+}
+
+.titulo-input {
+    float: left;
+
+    width: 70px;
+    padding: 4px;
+}
+
+
+.content {
+    width: 100%;
+    display: table;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #333;
+}
+
+.content a {
+    color: #333;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content table {
+    width: 100%; margin-top: 10px; margin-bottom: 30px;
+}
+
+.content tr.header {
+    font-weight: bold; background: #f90; color: #fff;
+
+}
+
+.content th.id {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content th.oferta {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30%;
+}
+
+.content th.empresa {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60%;
+}
+
+.content th.descricao {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+}
+
+.content th.pergunta  {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+}
+
+.content th.datacad {
+    width: 40%;
+}
+
+
+.content th.parceiro {
+    width: 10%;
+}
+
+.content th.status {
+    width: 17%;
+
+}
+
+.content p.status {
+    line-height: 20px;
+}
+
+.content th.cidade {
+    width: 30%;
+}
+
+.content th.operacao {
+    width: 10%;
+    padding-right: 10px;
+}
+
+.content tr.separador {
+    height: 10px;
+}
+
+.content tr.odd {
+    background: #fff;
+}
+
+.content tr.odd:hover {
+    background: #ff0;
+}
+
+.content tr.even {
+    background: #eee;
+}
+
+.content tr.even:hover {
+    background: #ff0;
+}
+
+.content tr.cidades {
+
+    background: #ff6;
+}
+
+.content tr.total {
+    border-top: 1px solid #000;
+}
+
+.content td.cidades {
+    border-bottom: 1px dotted #000;
+    padding: 5px;
+}
+
+.content td.id {
+    text-align: center; padding: 5px 10px 5px 10px;
+}
+
+.content td.titulo {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.content td.center {
+    text-align: center;
+}
+
+.content td.right {
+    text-align: right;
+}
+
+.content td.total {
+    font-weight: bold;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content td.rodape {
+    border-top: 2px solid #000;
+    border-bottom: 5px double #000;
+    font-weight: bold;
+}
+
+.content p.resultado {
+    padding: 10px;
+    color: #060;
+    text-align: right;
+    margin-top:20px;
+}
+
+.content .paginacao {
+    margin-top: 10px;
+    width: 870px;
+    min-height: 15px;
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    display: table;
+}
+
+.content .paginacao a {
+    color: #666;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a.pagina {
+    background: #fff;
+    font-weight: bold;
+}
+
+.compras {
+    width: 100%;
+    background: #eee;
+}
+
+
+.compras-menu a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    background: #ffc;
+    margin-bottom: 5px;
+}
+
+.compras-menu a:hover {
+    background: #333;
+    color: #ff0;
+}
+
+.compras-menu {
+    float: left;
+    width: 200px;
+}
+
+.form-perguntas input {
+
+    padding: 5px;
+}
+.painel-perguntas {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.painel-perguntas label {
+    width: 100px;
+    margin-left: 100px;
+
+}
+
+.painel-perguntas input {
+    padding: 5px;
+
+}
+
+.painel-perguntas select.field{
+    padding: 5px;
+    width: 200px;
+    border: 2px solid #069;
+    background: #0ef;
+    margin-left: 10px;
+
+}
+
+.toolbox {
+	/* background: #000; */
+	width: 100%;
+	height: 50px;
+}
+
+.toolbox input.button {
+	padding: 5px;
+	color: #039;
+}
+
+.content .painel {
+	display: table;
+	margin: 0 auto;
+    width: 500px;
+    height: 300px;
+}
+
+.content .painel p {
+	margin-bottom: 10px;
+}
+
+.content .painel input {
+	padding: 5px;
+}
+
+.content .painel label {
+	margin-left: 100px;
+	width: 200px;
+	text-align: right;
+}
+
+.content .painel input.f-descricao {
+	width: 200px;
+}
+
+.main {
+    display: table;
+    margin-bottom: 10px;
+}
+
+
+.main h2 {
+	display: block;
+    margin-bottom: 10px;
+	padding: 5px;
+	background: #f90;
+}
+
+.main li {
+	width: 100px;
+	display: inline-block;
+	background: #f90;
+	padding: 10px;
+}
+
+.main li a {
+	color: #fff;
+}
+
+.modify {
+	width: 880px;
+	float: left;
+	display: none;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.modify fieldset {
+	padding: 10px;
+	background: #eee;
+	margin-bottom: 10px;
+}
+
+.modify input {
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#modify p {
+	padding: 10px;
+}
+
+.progress-bar {
+	float: left;
+	padding: 10px;
+	/* background: #ff0; */
+	width: 900px;
+	text-align: right;
+	
+}
+
+.carregando {
+	padding: 2px;
+	color: #fff;
+}
+
+
+.changeqtde {
+	width: 880px;
+	float: left;
+	display: none;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.changeqtde fieldset {
+	padding: 10px;
+	background: #eee;
+	margin-bottom: 10px;
+}
+
+.changeqtde input {
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.module-item {
+	padding: 10px;
+	width: 260px;
+	height: 100px;
+	margin: 10px;
+	float: left;
+}
+
+.module-item a {
+	width: 250px;
+	height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #1E5A96;
+	display: block;
+	margin-bottom: 10px;
+}
+.module-item img {
+	float: left;
+}
+.module-item a span {
+	font-size: 28px;
+	line-height: 48px;
+	margin-left: 10px;
+}
+
+.module-item > span {
+	color: #666;
+	font-style: italic;
+	font-size: 14px;
+}
+
+
+.menu-item {
+	display: block;
+	color: #eee;
+	width: 100px;
+	float: left;
+	background: #666;
+}
+.menu-item img {
+	float: left;
+	padding: 10px;
+}
+
+.menu-item a {
+
+	font-size: 18px;
+	font-weight: bold;
+	color: #1E5A96;
+	display: block;
+}
+.menu-item a span {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.dropdown {
+	
+	overflow: hidden;
+}
+
+.incluir, .alterar {
+	width: 905px;
+	float: left;
+	display: none;
+	margin-bottom: 100px;
+	padding: 10px;
+}
+
+.incluir fieldset, .alterar fieldset {
+	padding: 10px;
+	background: #eee;
+	margin-bottom: 10px;
+}
+
+.incluir input, .alterar input {
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.incluir label, .alterar label {
+	text-align: right;
+}
+
+.incluir select, .alterar select {
+	padding: 5px;
+}
+
+.incluir legend, .alterar legend {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	background: #eee;
+	color: #333;
+	border: 1px solid #999;
+}
+
+.incluir .field, .alterar .field {
+	float: left;
+	min-width: 300px;
+	height: 25px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.incluir .label, .alterar .label {
+	clear: both;
+	float: left;
+	width: 300px;
+	height: 25px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: right;
+
+}
+
+
+.flexigrid div.fbutton .add {
+	background: url(../images/add.png) no-repeat center left;
+}
+
+.flexigrid div.fbutton .delete {
+	background: url(../images/close.png) no-repeat center left;
+}
+
+.flexigrid div.fbutton .update {
+	background: url(../images/update.png) no-repeat center left;
+}
+
+
+
+.msgbox {
+	float: left;
+	width: 880px;
+	height: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#header {
+	background: #036 !important;
+	border-bottom: 1px solid #000 !important;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+	z-index: 10000;
+}
+/*
+#header h1 {
+  position: relative;
+  top: -12px;
+  width: 78px;
+}*/
+#header h1 a{
+    height:100%;
+    position:relative;
+}
+#header h1 a img {
+    position:absolute;
+    height:100%;
+    padding-left: 0;
+}
+
+#user-nav{
+    top: 0;
+    right:20px;
+    height:50px !important;
+    position: fixed;
+    z-index: 10001;
+}
+
+#user-nav > ul{
+    margin:0;   
+}
+#user-nav > ul > li > a {
+  font-size: 15px;
+  padding: 13px 10px;
+  height:100%;
+  color:#fff;
+}
+
+#user-nav > ul > li > a > span.text{
+    color:#fff;
+    opacity:1 !important;
+}
+
+#user-nav > ul > li > a:hover {
+  color: #fff;
+  background:#4073A2;
+}
+
+#user-nav .btn.disabled,
+#user-nav .btn[disabled],
+#user-nav fieldset[disabled] .btn {
+pointer-events: none;
+cursor: not-allowed;
+opacity: 1;
+filter: alpha(opacity=1);
+-webkit-box-shadow: none;
+box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+}
+
+#topo-left {
+	float: left;
+	width: 100px;
+}
+
+
+#topo-right {
+	float: right;
+	padding: 2px;
+}
+
+.bloco {
+	float: left;
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+}
+
+#topo-right img {
+	float: left;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+.topo-right-info{
+	float: left;
+	color: #ccc;
+	margin-right: 20px;
+}
+
+.topo-right-info a{
+	color: #ccc;
+}
+
+#sidebar{
+    width:175px;
+    position:fixed;
+    left:0;
+    top:0;
+    min-height:100%;
+    background:#3C3C3C;
+    padding-top:50px;
+    overflow:hidden !important; 
+    transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+}
+
+#sidebar ul{
+    display: block;
+    height: 100%;
+    top: 0;
+    padding-top: 50px;
+    background: #3C3C3C;
+    width:175px;
+}
+#sidebar li{
+ width:175px;
+
+}
+#sidebar li a{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-weight:700 !important;
+  width:175px;
+}
+#sidebar li a span{
+display:inline-block !important;
+}
+#sidebar li.active{
+    /*background-color:#434343 !important;*/
+    background-color:#225E98 !important;
+}
